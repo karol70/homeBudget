@@ -5,14 +5,3 @@ using namespace std;
   {
       userManager.userRegistration();
   }
-
-  void HomeBudget::userLogIn()
-  {
-      userManager.userLogIn();
-  }
-  void HomeBudget::userLogOut()
-  {
-      userManager.userLogOut();
-  }
-
-

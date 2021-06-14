@@ -12,8 +12,6 @@ class HomeBudget
 
 public:
     void userRegister();
-    void userLogIn();
-    void userLogOut();
 };
 
 

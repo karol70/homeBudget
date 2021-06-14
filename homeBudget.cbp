@@ -32,8 +32,6 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="AuxiliaryMethods.cpp" />
-		<Unit filename="AuxiliaryMethods.h" />
 		<Unit filename="HomeBudget.cpp" />
 		<Unit filename="HomeBudget.h" />
 		<Unit filename="User.cpp" />

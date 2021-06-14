@@ -8,7 +8,7 @@ void UserManager::userRegistration()
 
     users.push_back(user);
 
- //   fileWithUsers.addUsersToFile(user);
+ //   plikZUzytkownikami.dopiszUzytkownikaDoPliku(uzytkownik);
 
     cout << endl << "Account created succesfully" << endl << endl;
     system("pause");
@@ -69,49 +69,3 @@ bool UserManager::isLoginExist(string login)
         }
         return false;
 }
-
-int UserManager::userLogIn()
-{
-    User user;
-    string login = "", password = "";
-
-    cout << "Enter login: ";
-    login = auxiliaryMethods.getLine();
-
-  for (int i = 0; i<users.size();i++)
-
-    {
-        if (users[i].getLogin() == login)
-        {
-            for (int Trials = 3; Trials > 0; Trials--)
-            {
-                cout << "Enter password. Trials left: " << Trials << ": ";
-                password = auxiliaryMethods.getLine();
-
-                if (users[i].getPassword() == password)
-                {
-                    cout << endl << "Logged in." <<endl << endl;
-                    system("pause");
-
-                    loggedUserId = users[i].getId();
-                    return loggedUserId;
-
-                }
-            }
-            cout << "Incorrect password entered three times" << endl;
-            system("pause");
-            return 0;
-        }
-
-    }
-    cout << "There's no user with entered login" << endl << endl;
-    system("pause");
-    return 0;
-}
-
-int UserManager::userLogOut()
-   {
-    loggedUserId = 0;
-    cout << "Logged Out";
-   }
-
