@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1623661176 source:e:\blocks\homebudget\user.cpp
+	"User.h"
+
+1623669226 e:\blocks\homebudget\user.h
+	<iostream>
+
+1623660392 source:e:\blocks\homebudget\homebudget.cpp
+	"HomeBudget.h"
+
+1623660392 e:\blocks\homebudget\homebudget.h
+	"UserManager.h"
+	<iostream>
+
+1623669226 e:\blocks\homebudget\usermanager.h
+	<vector>
+	<iostream>
+	"User.h"
+
+1623660838 source:e:\blocks\homebudget\main.cpp
+	<iostream>
+	"HomeBudget.h"
+
+1623660392 source:e:\blocks\homebudget\usermanager.cpp
+	"UserManager.h"
+

@@ -1,9 +1,9 @@
 #include <iostream>
-
+#include "HomeBudget.h"
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
-    return 0;
+    HomeBudget homeBudget;
+    homeBudget.userRegister();
 }
