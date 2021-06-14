@@ -1,26 +1,35 @@
 # depslib dependency file v1.0
-1623661176 source:e:\blocks\homebudget\user.cpp
+1623669745 source:e:\blocks\homebudget\user.cpp
 	"User.h"
 
-1623669226 e:\blocks\homebudget\user.h
+1623669745 e:\blocks\homebudget\user.h
 	<iostream>
 
-1623660392 source:e:\blocks\homebudget\homebudget.cpp
+1623671965 source:e:\blocks\homebudget\homebudget.cpp
 	"HomeBudget.h"
 
-1623660392 e:\blocks\homebudget\homebudget.h
+1623671955 e:\blocks\homebudget\homebudget.h
 	"UserManager.h"
 	<iostream>
 
-1623669226 e:\blocks\homebudget\usermanager.h
+1623671960 e:\blocks\homebudget\usermanager.h
 	<vector>
 	<iostream>
 	"User.h"
+	"AuxiliaryMethods.h"
 
-1623660838 source:e:\blocks\homebudget\main.cpp
+1623671955 source:e:\blocks\homebudget\main.cpp
 	<iostream>
 	"HomeBudget.h"
 
-1623660392 source:e:\blocks\homebudget\usermanager.cpp
+1623671970 source:e:\blocks\homebudget\usermanager.cpp
 	"UserManager.h"
+
+1623672516 source:e:\blocks\homebudget\auxiliarymethods.cpp
+	"AuxiliaryMethods.h"
+
+1623672516 e:\blocks\homebudget\auxiliarymethods.h
+	<iostream>
+	<sstream>
+	<algorithm>
 

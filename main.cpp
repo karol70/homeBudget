@@ -4,6 +4,8 @@ using namespace std;
 
 int main()
 {
-    HomeBudget homeBudget;
+      HomeBudget homeBudget;
     homeBudget.userRegister();
+
+
 }
