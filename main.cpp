@@ -5,8 +5,8 @@ using namespace std;
 int main()
 {
       HomeBudget homeBudget;
-    homeBudget.userRegister();
-    homeBudget.showAllusers();
+   // homeBudget.userRegister();
+    homeBudget.userLogIn();
 
 
 }
