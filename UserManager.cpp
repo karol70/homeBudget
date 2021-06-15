@@ -5,10 +5,11 @@ using namespace std;
 void UserManager::userRegistration()
 {
     User user = enterDataOfNewUser();
+    FileWithUsers fileWithUsers;
 
     users.push_back(user);
 
- //   fileWithUsers.addUsersToFile(user);
+    fileWithUsers.addUsersToFile(user);
 
     cout << endl << "Account created succesfully" << endl << endl;
     system("pause");
@@ -115,3 +116,18 @@ int UserManager::userLogOut()
     cout << "Logged Out";
    }
 
+   void UserManager::showAllUsers()
+{
+
+    for (int i = 0; i<users.size();i++)
+
+        {
+            cout << users[i].getId()<< endl;
+            cout << users[i].getName()<< endl;
+            cout << users[i].getSurname()<< endl;
+            cout << users[i].getLogin()<< endl;
+            cout << users[i].getPassword()<< endl;
+
+
+        }
+}

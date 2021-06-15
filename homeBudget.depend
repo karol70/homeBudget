@@ -1,35 +1,63 @@
 # depslib dependency file v1.0
-1623669745 source:e:\blocks\homebudget\user.cpp
+1623672730 source:e:\blocks\homebudget\user.cpp
 	"User.h"
 
-1623669745 e:\blocks\homebudget\user.h
+1623672730 e:\blocks\homebudget\user.h
 	<iostream>
 
-1623671965 source:e:\blocks\homebudget\homebudget.cpp
+1623743546 source:e:\blocks\homebudget\homebudget.cpp
 	"HomeBudget.h"
 
-1623671955 e:\blocks\homebudget\homebudget.h
+1623743546 e:\blocks\homebudget\homebudget.h
 	"UserManager.h"
 	<iostream>
 
-1623671960 e:\blocks\homebudget\usermanager.h
+1623744237 e:\blocks\homebudget\usermanager.h
 	<vector>
 	<iostream>
 	"User.h"
 	"AuxiliaryMethods.h"
+	"FileWithUsers.h"
 
-1623671955 source:e:\blocks\homebudget\main.cpp
+1623745987 source:e:\blocks\homebudget\main.cpp
 	<iostream>
 	"HomeBudget.h"
 
-1623671970 source:e:\blocks\homebudget\usermanager.cpp
+1623743948 source:e:\blocks\homebudget\usermanager.cpp
 	"UserManager.h"
 
-1623672516 source:e:\blocks\homebudget\auxiliarymethods.cpp
+1623674384 source:e:\blocks\homebudget\auxiliarymethods.cpp
 	"AuxiliaryMethods.h"
 
-1623672516 e:\blocks\homebudget\auxiliarymethods.h
+1623674384 e:\blocks\homebudget\auxiliarymethods.h
 	<iostream>
 	<sstream>
 	<algorithm>
+
+1303067212 source:e:\blocks\homebudget\markup.cpp
+	<stdio.h>
+	"Markup.h"
+	<errno.h>
+	<iconv.h>
+	<windows.h>
+	<mbstring.h>
+
+1303067212 e:\blocks\homebudget\markup.h
+	<stdlib.h>
+	<string.h>
+	<string>
+	<afx.h>
+
+1623745987 source:e:\blocks\homebudget\filewithusers.cpp
+	"FileWithUsers.h"
+
+1623745370 e:\blocks\homebudget\filewithusers.h
+	<iostream>
+	<vector>
+	"Markup.h"
+	<cstdlib>
+	<string>
+	<sys/stat.h>
+	<unistd.h>
+	"User.h"
 
