@@ -14,5 +14,8 @@ using namespace std;
   {
       userManager.userLogOut();
   }
-
+void HomeBudget::showAllusers()
+{
+    userManager.showAllUsers();
+}
 

@@ -14,6 +14,7 @@ public:
     void userRegister();
     void userLogIn();
     void userLogOut();
+    void showAllusers();
 };
 
 
