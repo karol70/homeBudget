@@ -18,4 +18,11 @@ void HomeBudget::showAllusers()
 {
     userManager.showAllUsers();
 }
-
+void HomeBudget::addIncome()
+{
+    incomes.addIncome();
+}
+void HomeBudget::addExpense()
+{
+    expenses.addExpense();
+}

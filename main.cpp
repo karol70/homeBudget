@@ -6,7 +6,9 @@ int main()
 {
       HomeBudget homeBudget;
    // homeBudget.userRegister();
-    homeBudget.userLogIn();
+  //  homeBudget.userLogIn();
+  homeBudget.addIncome();
+  homeBudget.addExpense();
 
 
 }

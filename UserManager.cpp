@@ -131,3 +131,8 @@ int UserManager::userLogOut()
 
         }
 }
+
+int UserManager::getLoggedUserId()
+{
+    return loggedUserId;
+}

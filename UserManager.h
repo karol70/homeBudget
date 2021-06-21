@@ -33,6 +33,7 @@ public:
     int userLogIn();
     int userLogOut();
     void showAllUsers();
+    int getLoggedUserId();
 
 
 
