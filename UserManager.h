@@ -28,12 +28,12 @@ public:
     users = fileWithUsers.loadUsersFromFile();
     };
 
-
     void userRegistration();
     int userLogIn();
     int userLogOut();
     void showAllUsers();
     int getLoggedUserId();
+    bool isUserLoggedIn();
 
 
 

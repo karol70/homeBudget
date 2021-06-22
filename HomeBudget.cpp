@@ -9,10 +9,16 @@ using namespace std;
   void HomeBudget::userLogIn()
   {
       userManager.userLogIn();
+      if (userManager.isUserLoggedIn())
+      {
+          transactionManager = new TransactionManager ("incomes.xml","expenses.xml",userManager.getLoggedUserId());
+      }
   }
   void HomeBudget::userLogOut()
   {
       userManager.userLogOut();
+      delete transactionManager;
+      transactionManager = NULL;
   }
 void HomeBudget::showAllusers()
 {
@@ -20,9 +26,11 @@ void HomeBudget::showAllusers()
 }
 void HomeBudget::addIncome()
 {
-    incomes.addIncome();
+    transactionManager -> addIncome();
 }
 void HomeBudget::addExpense()
 {
-    expenses.addExpense();
+    transactionManager -> addExpense();
 }
+
+

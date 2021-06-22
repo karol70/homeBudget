@@ -4,6 +4,7 @@
 #include <iostream>
 #include "AuxiliaryMethods.h"
 #include <string>
+#include "fileWithTransactions.h"
 
 using namespace std;
 
@@ -15,26 +16,20 @@ class Transactions
     string item;
     int amount;
 
-    AuxiliaryMethods auxiliaryMethods;
-    int loadLastTransactionId();
-    bool isDateCorrect(string enteredDate);
-    int getNumberOfDaysOfMonth(int year, int month);
-
 
 public:
-    void setloggedUserId(int newloggedUserId);
+
+    void setloggedUserId(int newLoggedUserId);
     void setTransactionId(int newTransactionId);
     void setDate(string newDate);
     void setItem(string newItem);
     void setAmount(int newAmount);
 
-    int getLoggeduserId();
+    int getLoggedUserId();
     int getTransactionId();
     string getDate();
     string getItem();
-    int getAmount();
-
-    Transactions giveDataOfNewTransaction();
+    float getAmount();
 
 };
 

@@ -5,27 +5,27 @@
 1623672730 e:\blocks\homebudget\user.h
 	<iostream>
 
-1623834025 source:e:\blocks\homebudget\homebudget.cpp
+1624355816 source:e:\blocks\homebudget\homebudget.cpp
 	"HomeBudget.h"
 
-1623834044 e:\blocks\homebudget\homebudget.h
+1624355471 e:\blocks\homebudget\homebudget.h
 	"UserManager.h"
-	"Incomes.h"
-	"Expenses.h"
+	"transactionsManager.h"
+	"transactions.h"
 	<iostream>
 
-1623757045 e:\blocks\homebudget\usermanager.h
+1624352215 e:\blocks\homebudget\usermanager.h
 	<vector>
 	<iostream>
 	"User.h"
 	"AuxiliaryMethods.h"
 	"FileWithUsers.h"
 
-1623834025 source:e:\blocks\homebudget\main.cpp
+1624355989 source:e:\blocks\homebudget\main.cpp
 	<iostream>
 	"HomeBudget.h"
 
-1623757045 source:e:\blocks\homebudget\usermanager.cpp
+1624350715 source:e:\blocks\homebudget\usermanager.cpp
 	"UserManager.h"
 
 1623836477 source:e:\blocks\homebudget\auxiliarymethods.cpp
@@ -52,7 +52,7 @@
 	<string>
 	<afx.h>
 
-1623746189 source:e:\blocks\homebudget\filewithusers.cpp
+1624346120 source:e:\blocks\homebudget\filewithusers.cpp
 	"FileWithUsers.h"
 
 1623746189 e:\blocks\homebudget\filewithusers.h
@@ -65,29 +65,84 @@
 	<unistd.h>
 	"User.h"
 
-1623834025 source:e:\blocks\homebudget\incomes.cpp
+1624352270 source:e:\blocks\homebudget\incomes.cpp
 	"Incomes.h"
 
-1623834054 source:e:\blocks\homebudget\expenses.cpp
+1624352270 source:e:\blocks\homebudget\expenses.cpp
 	"Expenses.h"
 
-1623755272 e:\blocks\homebudget\expenses.h
+1624282414 e:\blocks\homebudget\expenses.h
 	"transactions.h"
 	<vector>
+	"fileWithExpenses.h"
 	<iostream>
 
-1623837303 e:\blocks\homebudget\transactions.h
+1624354994 e:\blocks\homebudget\transactions.h
 	"UserManager.h"
 	<iostream>
 	"AuxiliaryMethods.h"
 	<string>
+	"fileWithTransactions.h"
 
-1623837886 source:e:\blocks\homebudget\transactions.cpp
+1624355967 source:e:\blocks\homebudget\transactions.cpp
 	"Transactions.h"
 
-1623828369 e:\blocks\homebudget\incomes.h
+1624273763 e:\blocks\homebudget\incomes.h
 	"transactions.h"
 	<vector>
 	<string>
+	"fileWithIncomes.h"
 	<iostream>
+
+1624353186 e:\blocks\homebudget\filewithincomes.h
+	<iostream>
+	<vector>
+	<cstdlib>
+	<string>
+	"Markup.h"
+	"transactions.h"
+	<sys/stat.h>
+	<unistd.h>
+	"UserManager.h"
+
+1624346120 source:e:\blocks\homebudget\filewithexpenses.cpp
+	"fileWithExpenses.h"
+
+1624282546 e:\blocks\homebudget\filewithexpenses.h
+	<iostream>
+	<vector>
+	<cstdlib>
+	<string>
+	"Markup.h"
+	"transactions.h"
+	"UserManager.h"
+
+1624352215 source:e:\blocks\homebudget\filewithincomes.cpp
+	"fileWithIncomes.h"
+
+1624355713 e:\blocks\homebudget\filewithtransactions.h
+	<iostream>
+	<vector>
+	<cstdlib>
+	<string>
+	"Markup.h"
+	"transactionsManager.h"
+	"transactions.h"
+	<sys/stat.h>
+	<unistd.h>
+	"UserManager.h"
+
+1624355028 e:\blocks\homebudget\transactionsmanager.h
+	"UserManager.h"
+	<iostream>
+	"AuxiliaryMethods.h"
+	<string>
+	"fileWithTransactions.h"
+	"transactions.h"
+
+1624355899 source:e:\blocks\homebudget\filewithtransactions.cpp
+	"fileWithTransactions.h"
+
+1624355835 source:e:\blocks\homebudget\transactionsmanager.cpp
+	"transactionsManager.h"
 
