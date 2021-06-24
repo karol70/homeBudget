@@ -8,10 +8,13 @@
      {
       CMarkup xml;
       xml.AddElem("USERS");
+      xml.Save("users.xml");
+
      }
 
     CMarkup xml;
-    xml.Load("FileWithUsers.xml");
+    xml.Load("users.xml");
+
     xml.FindElem();
     xml.IntoElem();
     xml.AddElem( "User");
@@ -22,7 +25,11 @@
     xml.AddElem( "LOGIN" ,user.getLogin());
     xml.AddElem( "PASSWORD",user.getPassword());
     xml.OutOfElem();
-    xml.Save("FileWithUsers.xml");
+    xml.OutOfElem();
+    xml.Save("users.xml");
+
+
+
  }
 
  bool FileWithUsers::isFileEmpty()
@@ -31,16 +38,12 @@
 
     bool isEmpty = true;
     CMarkup xml;
-    xml.Load("FileWithUsers.xml");
-    xml.FindElem();
-    xml.IntoElem();
-    string data =xml.GetData();
-    if (data.empty())
-    {
-       isEmpty = true;
-    }
-    else isEmpty =false;
-
+    xml.Load("users.xml");
+   if (xml.FindElem() == true)
+   {
+       isEmpty = false;
+   }
+   else isEmpty = true;
 
     return isEmpty;
 
@@ -51,7 +54,7 @@ vector<User> FileWithUsers::loadUsersFromFile()
     User user;
     vector<User> users;
     CMarkup xml;
-    xml.Load("FileWithUsers.xml");
+    xml.Load("users.xml");
 xml.ResetPos();
 xml.FindElem();
 xml.IntoElem();

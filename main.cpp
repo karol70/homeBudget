@@ -4,9 +4,17 @@ using namespace std;
 
 int main()
 {
+
       HomeBudget homeBudget;
-    homeBudget.userRegister();
-    homeBudget.showAllusers();
+    //homeBudget.userRegister();
+    homeBudget.userLogIn();
+   // homeBudget.showAllIncomes();
+  // homeBudget.addIncome();
+   //   homeBudget.addIncome();
+     homeBudget.addIncome();
+ // homeBudget.addExpense();
+
+
 
 
 }

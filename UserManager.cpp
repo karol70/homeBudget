@@ -131,3 +131,16 @@ int UserManager::userLogOut()
 
         }
 }
+
+int UserManager::getLoggedUserId()
+{
+    return loggedUserId;
+}
+
+bool UserManager::isUserLoggedIn()
+{
+    if (loggedUserId > 0)
+        return true;
+    else
+        return false;
+}
