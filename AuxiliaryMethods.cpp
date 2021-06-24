@@ -139,3 +139,34 @@ int AuxiliaryMethods::getNumberOfDaysOfMonth(int year, int month)
 
     return days;
 }
+
+string AuxiliaryMethods::convertDateToString (int date)
+{
+
+    string dateStr = to_string(date);
+    string year = dateStr.substr(0,4);
+    string month = dateStr.substr(4,2);
+    string day = dateStr.substr(6,2);
+    string dateSeparatedByDash = year + "-"+ month + "-" + day;
+    return dateSeparatedByDash;
+}
+int AuxiliaryMethods::convertDateToInt(string Date)
+{
+        string year = Date.substr(0,Date.find("-"));
+        int intConvertedYear = atoi(year.c_str());
+        Date.erase(0,4+1);
+
+         string month = Date.substr(0,Date.find("-"));
+         int intConvertedMonth = atoi(month.c_str());
+        Date.erase(0,2+1);
+
+         string day = Date.substr(0,Date.find("-"));
+         int intConvertedDay = atoi(day.c_str());
+        Date.erase(0,2+1);
+
+        string convertedDate = year+month+day;
+        int intConvertedDate = atoi(convertedDate.c_str());
+
+        return intConvertedDate;
+
+}

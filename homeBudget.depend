@@ -5,33 +5,33 @@
 1623672730 e:\blocks\homebudget\user.h
 	<iostream>
 
-1624515436 source:e:\blocks\homebudget\homebudget.cpp
+1624545074 source:e:\blocks\homebudget\homebudget.cpp
 	"HomeBudget.h"
 
-1624515428 e:\blocks\homebudget\homebudget.h
+1624545074 e:\blocks\homebudget\homebudget.h
 	"UserManager.h"
 	"transactionsManager.h"
 	"transactions.h"
 	<iostream>
 
-1624352215 e:\blocks\homebudget\usermanager.h
+1624545074 e:\blocks\homebudget\usermanager.h
 	<vector>
 	<iostream>
 	"User.h"
 	"AuxiliaryMethods.h"
 	"FileWithUsers.h"
 
-1624544643 source:e:\blocks\homebudget\main.cpp
+1624548445 source:e:\blocks\homebudget\main.cpp
 	<iostream>
 	"HomeBudget.h"
 
-1624350715 source:e:\blocks\homebudget\usermanager.cpp
+1624545074 source:e:\blocks\homebudget\usermanager.cpp
 	"UserManager.h"
 
-1624435235 source:e:\blocks\homebudget\auxiliarymethods.cpp
+1624546923 source:e:\blocks\homebudget\auxiliarymethods.cpp
 	"AuxiliaryMethods.h"
 
-1624435205 e:\blocks\homebudget\auxiliarymethods.h
+1624545871 e:\blocks\homebudget\auxiliarymethods.h
 	<iostream>
 	<sstream>
 	<algorithm>
@@ -52,7 +52,7 @@
 	<string>
 	<afx.h>
 
-1624346120 source:e:\blocks\homebudget\filewithusers.cpp
+1624545074 source:e:\blocks\homebudget\filewithusers.cpp
 	"FileWithUsers.h"
 
 1623746189 e:\blocks\homebudget\filewithusers.h
@@ -77,13 +77,13 @@
 	"fileWithExpenses.h"
 	<iostream>
 
-1624441455 e:\blocks\homebudget\transactions.h
+1624548519 e:\blocks\homebudget\transactions.h
 	"UserManager.h"
 	<iostream>
 	"AuxiliaryMethods.h"
 	<string>
 
-1624437269 source:e:\blocks\homebudget\transactions.cpp
+1624548468 source:e:\blocks\homebudget\transactions.cpp
 	"Transactions.h"
 
 1624273763 e:\blocks\homebudget\incomes.h
@@ -119,7 +119,7 @@
 1624352215 source:e:\blocks\homebudget\filewithincomes.cpp
 	"fileWithIncomes.h"
 
-1624441435 e:\blocks\homebudget\filewithtransactions.h
+1624548445 e:\blocks\homebudget\filewithtransactions.h
 	<iostream>
 	<vector>
 	<cstdlib>
@@ -129,8 +129,9 @@
 	<sys/stat.h>
 	<unistd.h>
 	"UserManager.h"
+	"AuxiliaryMethods.h"
 
-1624522901 e:\blocks\homebudget\transactionsmanager.h
+1624545074 e:\blocks\homebudget\transactionsmanager.h
 	"UserManager.h"
 	<iostream>
 	"AuxiliaryMethods.h"
@@ -138,9 +139,9 @@
 	"fileWithTransactions.h"
 	"transactions.h"
 
-1624544565 source:e:\blocks\homebudget\filewithtransactions.cpp
+1624548445 source:e:\blocks\homebudget\filewithtransactions.cpp
 	"fileWithTransactions.h"
 
-1624523298 source:e:\blocks\homebudget\transactionsmanager.cpp
+1624546902 source:e:\blocks\homebudget\transactionsmanager.cpp
 	"transactionsManager.h"
 
