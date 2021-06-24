@@ -66,6 +66,8 @@ vector<Transactions> FileWithTransactions::loadTransactionsFromFile(int LOGGED_U
 
             xml.FindElem("DATE");
             string loadedDate = xml.GetData();
+            AuxiliaryMethods auxiliaryMethods;
+            int loadedDateInt = auxiliaryMethods.convertDateToInt(loadedDate);
 
             xml.FindElem("ITEM");
             string loadedItem = xml.GetData();
@@ -77,7 +79,7 @@ vector<Transactions> FileWithTransactions::loadTransactionsFromFile(int LOGGED_U
 
             transaction.setloggedUserId(loadedUserId);
             transaction.setTransactionId(loadedTransactionId);
-            transaction.setDate(loadedDate);
+            transaction.setDate(loadedDateInt);
             transaction.setItem(loadedItem);
             transaction.setAmount(loadedAmount);
 

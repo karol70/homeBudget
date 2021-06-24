@@ -8,7 +8,7 @@
     {
         transactionId = newTransactionId;
     }
-    void Transactions::setDate(string newDate)
+    void Transactions::setDate(int newDate)
     {
         date = newDate;
     }
@@ -29,7 +29,7 @@
     {
         return transactionId;
     }
-    string Transactions::getDate()
+    int Transactions::getDate()
     {
         return date;
     }

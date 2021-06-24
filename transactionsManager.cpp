@@ -33,6 +33,7 @@ else
 
        transaction.setTransactionId(lastTransactionId);
         string enteredData;
+        int enteredDataInt;
 
        char yOrN = 'o';
        cout << "Does transaction concern today? (Y/N):  ";
@@ -46,7 +47,7 @@ else
 }
        if (yOrN == 'Y')
        {
-           enteredData = auxiliaryMethods.loadCurrentYear()+auxiliaryMethods.loadCurrentMonth()+auxiliaryMethods.loadCurrentDay();
+           enteredData = auxiliaryMethods.loadCurrentYear()+"-"+auxiliaryMethods.loadCurrentMonth()+"-"+auxiliaryMethods.loadCurrentDay();
        }
        else if(yOrN == 'N')
        {
@@ -56,9 +57,10 @@ else
         {
         cout << "Enter transaction date in format yyyy-mm-dd: ";
         enteredData= auxiliaryMethods.getLine();
+        enteredDataInt = auxiliaryMethods.convertDateToInt(enteredData);
        }
        }
-         transaction.setDate(enteredData);
+         transaction.setDate(enteredDataInt);
 
         cout << "Enter transaction item: ";
        transaction.setItem(auxiliaryMethods.getLine());
