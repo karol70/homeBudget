@@ -16,7 +16,7 @@
     {
         item = newItem;
     }
-    void Transactions::setAmount(int newAmount)
+    void Transactions::setAmount(double newAmount)
     {
         amount = newAmount;
     }
@@ -37,7 +37,7 @@
     {
         return item;
     }
-    float Transactions::getAmount()
+    double Transactions::getAmount()
     {
         return amount;
     }

@@ -5,18 +5,18 @@
 #include <cstdlib>
 #include <string>
 #include "Markup.h"
-#include "transactionsManager.h"
 #include "transactions.h"
 #include <sys/stat.h>
 #include <unistd.h>
 #include "UserManager.h"
 
 
-using namespace std;
 
+using namespace std;
+class Transactions;
 class FileWithTransactions
 {
-
+    Transactions transaction;
     string fileName;
     bool isFileEmpty(string fileName);
 
@@ -24,7 +24,7 @@ class FileWithTransactions
 public:
     FileWithTransactions(){}
     void addTransactionToFile(Transactions transaction,string transactionFileName,string IncomeOrExpense);
-    vector<Transactions> loadIncomesFromFile();
+    vector<Transactions> loadTransactionsFromFile(int LOGGED_USER_ID,string transactionFileName,string IncomeOrExpense);
 };
 
 

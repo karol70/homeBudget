@@ -33,4 +33,8 @@ void HomeBudget::addExpense()
     transactionManager -> addExpense();
 }
 
+void HomeBudget::showAllIncomes()
+{
+  transactionManager -> showAllIncomes();
+}
 

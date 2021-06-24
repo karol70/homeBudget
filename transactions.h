@@ -4,7 +4,7 @@
 #include <iostream>
 #include "AuxiliaryMethods.h"
 #include <string>
-#include "fileWithTransactions.h"
+
 
 using namespace std;
 
@@ -14,7 +14,7 @@ class Transactions
     int transactionId;
     string date;
     string item;
-    int amount;
+    double amount;
 
 
 public:
@@ -23,13 +23,13 @@ public:
     void setTransactionId(int newTransactionId);
     void setDate(string newDate);
     void setItem(string newItem);
-    void setAmount(int newAmount);
+    void setAmount(double newAmount);
 
     int getLoggedUserId();
     int getTransactionId();
     string getDate();
     string getItem();
-    float getAmount();
+    double getAmount();
 
 };
 

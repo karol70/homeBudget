@@ -17,6 +17,8 @@ public:
     string loadCurrentYear();
     string loadCurrentMonth();
     string loadCurrentDay();
+    bool isDateCorrect(string Date);
+    int getNumberOfDaysOfMonth(int year, int month);
 
 
 

@@ -23,6 +23,7 @@ public:
     void showAllusers();
     void addIncome();
     void addExpense();
+    void showAllIncomes();
 
 };
 
