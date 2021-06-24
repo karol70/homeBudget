@@ -22,12 +22,13 @@ class TransactionManager
 
     AuxiliaryMethods auxiliaryMethods;
     FileWithTransactions fileWithTransactions;
-    int loadLastTransactionId();
+    int loadLastIncomeId();
+    int loadLastExpenseId();
     bool isDateCorrect(string enteredDate);
     int getNumberOfDaysOfMonth(int year, int month);
     void showIncomes(Transactions transaction);
 
-    Transactions giveDataOfNewTransaction();
+    Transactions giveDataOfNewTransaction(int lastTransactionId);
 
 public:
     TransactionManager (string incomesFileName, string expensesFileName, int loggedUserId):
@@ -35,7 +36,6 @@ public:
         {
         incomes = fileWithTransactions.loadTransactionsFromFile(LOGGED_USER_ID,INCOMES_FILE_NAME,"INCOME");
         expenses = fileWithTransactions.loadTransactionsFromFile(LOGGED_USER_ID,EXPENSES_FILE_NAME,"EXPENSE");
-
         };
 
     void addIncome();

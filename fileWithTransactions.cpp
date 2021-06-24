@@ -33,7 +33,7 @@ void FileWithTransactions::addTransactionToFile(Transactions transaction,string 
     xml.AddElem( IncomeOrExpense);
     xml.IntoElem();
     xml.AddElem( "USER_ID",transaction.getLoggedUserId());
-    xml.AddElem( "TRANSACTION_ID",transaction.getTransactionId());
+    xml.AddElem( IncomeOrExpense+"_ID",transaction.getTransactionId());
     xml.AddElem( "DATE",transaction.getDate());
     xml.AddElem( "ITEM",transaction.getItem());
     string amount = to_string(transaction.getAmount());
@@ -45,12 +45,6 @@ void FileWithTransactions::addTransactionToFile(Transactions transaction,string 
 }
 vector<Transactions> FileWithTransactions::loadTransactionsFromFile(int LOGGED_USER_ID, string transactionFileName,string IncomeOrExpense)
 {
-    if(isFileEmpty(transactionFileName)==true)
-    {
-        cout << "File: " << transactionFileName << " is empty" << endl;
-    }
-    else
-    {
 
     Transactions transaction;
     vector<Transactions> transactions;
@@ -95,4 +89,4 @@ vector<Transactions> FileWithTransactions::loadTransactionsFromFile(int LOGGED_U
 
     return transactions;
 }
-}
+

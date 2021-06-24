@@ -21,7 +21,7 @@
 	"AuxiliaryMethods.h"
 	"FileWithUsers.h"
 
-1624515446 source:e:\blocks\homebudget\main.cpp
+1624544643 source:e:\blocks\homebudget\main.cpp
 	<iostream>
 	"HomeBudget.h"
 
@@ -130,7 +130,7 @@
 	<unistd.h>
 	"UserManager.h"
 
-1624516626 e:\blocks\homebudget\transactionsmanager.h
+1624522901 e:\blocks\homebudget\transactionsmanager.h
 	"UserManager.h"
 	<iostream>
 	"AuxiliaryMethods.h"
@@ -138,9 +138,9 @@
 	"fileWithTransactions.h"
 	"transactions.h"
 
-1624519952 source:e:\blocks\homebudget\filewithtransactions.cpp
+1624544565 source:e:\blocks\homebudget\filewithtransactions.cpp
 	"fileWithTransactions.h"
 
-1624516626 source:e:\blocks\homebudget\transactionsmanager.cpp
+1624523298 source:e:\blocks\homebudget\transactionsmanager.cpp
 	"transactionsManager.h"
 

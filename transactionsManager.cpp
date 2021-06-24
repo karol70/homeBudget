@@ -1,13 +1,37 @@
 #include "transactionsManager.h"
 
- Transactions TransactionManager::giveDataOfNewTransaction()
+int TransactionManager::loadLastIncomeId()
+{
+    if (incomes.empty() == true)
+        return 1;
+else
+{
+    int lastIncomeId = incomes.back().getTransactionId();
+    return lastIncomeId + 1;
+}
+
+}
+int TransactionManager::loadLastExpenseId()
+{
+    if (expenses.empty() == true)
+        return 1;
+else
+{
+    int lastExpenseId = expenses.back().getTransactionId();
+    return lastExpenseId + 1;
+}
+
+}
+
+
+ Transactions TransactionManager::giveDataOfNewTransaction(int lastTransactionId)
     {
        Transactions transaction;
 
 
         transaction.setloggedUserId(LOGGED_USER_ID);
 
-       transaction.setTransactionId(1);
+       transaction.setTransactionId(lastTransactionId);
         string enteredData;
 
        char yOrN = 'o';
@@ -61,7 +85,7 @@
 
     string income = "INCOME";
     Transactions transaction;
-    transaction = giveDataOfNewTransaction();
+    transaction = giveDataOfNewTransaction(loadLastIncomeId());
     incomes.push_back(transaction);
     FileWithTransactions fileWithTransactions;
     fileWithTransactions.addTransactionToFile(transaction,INCOMES_FILE_NAME,income);
@@ -70,23 +94,14 @@
  void TransactionManager::addExpense()
 {
     cout << "<<<<< ADDING EXPENSE >>>>>" <<endl<<endl<<endl;
-    Transactions transaction;
     string expense = "EXPENSE";
-    expenses.push_back(giveDataOfNewTransaction());
+    Transactions transaction;
+    transaction = giveDataOfNewTransaction(loadLastExpenseId());
+    expenses.push_back(transaction);
     FileWithTransactions fileWithTransactions;
-    fileWithTransactions.addTransactionToFile(transaction,INCOMES_FILE_NAME,expense);
+    fileWithTransactions.addTransactionToFile(transaction,EXPENSES_FILE_NAME,expense);
 }
 
-/*void TransactionManager::showIncomes()
-{
-   for (int i=0;i<incomes.size();i++)
-   {
-       cout<<"Date: "<<incomes[i].getDate()<<endl;
-       cout<<"Item: "<<incomes[i].getItem()<<endl;
-       cout<<"Amount: "<<incomes[i].getAmount()<<endl;
-   }
-}
-*/
 void TransactionManager::showAllIncomes()
 {
     system("cls");
@@ -117,3 +132,5 @@ void TransactionManager::showIncomes(Transactions transaction)
     cout << "Amount:                      " << transaction.getAmount ()<< endl;
 
 }
+
+
