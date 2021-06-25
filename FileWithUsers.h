@@ -22,6 +22,7 @@ public:
     FileWithUsers(){};
    void addUsersToFile(User user);
    vector<User> loadUsersFromFile();
+   void saveAllUsersToFile(vector <User> users);
 
 };
 

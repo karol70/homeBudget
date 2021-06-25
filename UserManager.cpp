@@ -144,3 +144,24 @@ bool UserManager::isUserLoggedIn()
     else
         return false;
 }
+
+void UserManager::changePassword()
+{
+      string newPassword = "";
+    cout << "Enter new Password: ";
+    newPassword = auxiliaryMethods.getLine();
+
+
+    for (int i = 0; i<users.size();i++)
+
+    {
+        if (users[i].getId() == loggedUserId)
+        {
+            users[i].setPassword(newPassword);
+            cout << "Password changed." <<endl << endl;
+            system("pause");
+        }
+    }
+    fileWithUsers.saveAllUsersToFile(users);
+
+}

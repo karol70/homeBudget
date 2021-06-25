@@ -34,6 +34,7 @@ public:
     void showAllUsers();
     int getLoggedUserId();
     bool isUserLoggedIn();
+    void changePassword();
 
 
 

@@ -24,6 +24,7 @@ public:
     void addIncome();
     void addExpense();
     void showAllIncomes();
+    void changePassword();
 
 };
 
