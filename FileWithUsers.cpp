@@ -90,3 +90,28 @@ while (xml.FindElem("User"))
        }
        return users;
 }
+
+void FileWithUsers::saveAllUsersToFile(vector <User> users)
+{
+    CMarkup xml;
+    xml.AddElem("USERS");
+    xml.Save("users.xml");
+    for (int i=0; i<users.size(); i++)
+    {
+    CMarkup xml;
+    xml.Load("users.xml");
+    xml.FindElem();
+    xml.IntoElem();
+    xml.IntoElem();
+    xml.AddElem( "User");
+    xml.IntoElem();
+    xml.AddElem( "ID" ,users[i].getId());
+    xml.AddElem( "NAME",users[i].getName());
+    xml.AddElem( "SURNAME" ,users[i].getSurname());
+    xml.AddElem( "LOGIN" ,users[i].getLogin());
+    xml.AddElem( "PASSWORD",users[i].getPassword());
+    xml.OutOfElem();
+    xml.OutOfElem();
+    xml.Save("users.xml");
+    }
+}

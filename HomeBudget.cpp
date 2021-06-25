@@ -37,4 +37,7 @@ void HomeBudget::showAllIncomes()
 {
   transactionManager -> showAllIncomes();
 }
-
+void HomeBudget::changePassword()
+{
+ userManager.changePassword();
+}

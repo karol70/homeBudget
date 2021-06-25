@@ -5,33 +5,33 @@
 1623672730 e:\blocks\homebudget\user.h
 	<iostream>
 
-1624545074 source:e:\blocks\homebudget\homebudget.cpp
+1624608674 source:e:\blocks\homebudget\homebudget.cpp
 	"HomeBudget.h"
 
-1624545074 e:\blocks\homebudget\homebudget.h
+1624608674 e:\blocks\homebudget\homebudget.h
 	"UserManager.h"
 	"transactionsManager.h"
 	"transactions.h"
 	<iostream>
 
-1624545074 e:\blocks\homebudget\usermanager.h
+1624608674 e:\blocks\homebudget\usermanager.h
 	<vector>
 	<iostream>
 	"User.h"
 	"AuxiliaryMethods.h"
 	"FileWithUsers.h"
 
-1624548445 source:e:\blocks\homebudget\main.cpp
+1624608703 source:e:\blocks\homebudget\main.cpp
 	<iostream>
 	"HomeBudget.h"
 
-1624545074 source:e:\blocks\homebudget\usermanager.cpp
+1624608674 source:e:\blocks\homebudget\usermanager.cpp
 	"UserManager.h"
 
-1624546923 source:e:\blocks\homebudget\auxiliarymethods.cpp
+1624548760 source:e:\blocks\homebudget\auxiliarymethods.cpp
 	"AuxiliaryMethods.h"
 
-1624545871 e:\blocks\homebudget\auxiliarymethods.h
+1624548760 e:\blocks\homebudget\auxiliarymethods.h
 	<iostream>
 	<sstream>
 	<algorithm>
@@ -52,10 +52,10 @@
 	<string>
 	<afx.h>
 
-1624545074 source:e:\blocks\homebudget\filewithusers.cpp
+1624608674 source:e:\blocks\homebudget\filewithusers.cpp
 	"FileWithUsers.h"
 
-1623746189 e:\blocks\homebudget\filewithusers.h
+1624608674 e:\blocks\homebudget\filewithusers.h
 	<iostream>
 	<vector>
 	"Markup.h"
@@ -77,13 +77,13 @@
 	"fileWithExpenses.h"
 	<iostream>
 
-1624548519 e:\blocks\homebudget\transactions.h
+1624548760 e:\blocks\homebudget\transactions.h
 	"UserManager.h"
 	<iostream>
 	"AuxiliaryMethods.h"
 	<string>
 
-1624548468 source:e:\blocks\homebudget\transactions.cpp
+1624548760 source:e:\blocks\homebudget\transactions.cpp
 	"Transactions.h"
 
 1624273763 e:\blocks\homebudget\incomes.h
@@ -119,7 +119,7 @@
 1624352215 source:e:\blocks\homebudget\filewithincomes.cpp
 	"fileWithIncomes.h"
 
-1624548445 e:\blocks\homebudget\filewithtransactions.h
+1624548760 e:\blocks\homebudget\filewithtransactions.h
 	<iostream>
 	<vector>
 	<cstdlib>
@@ -139,9 +139,9 @@
 	"fileWithTransactions.h"
 	"transactions.h"
 
-1624548445 source:e:\blocks\homebudget\filewithtransactions.cpp
+1624548760 source:e:\blocks\homebudget\filewithtransactions.cpp
 	"fileWithTransactions.h"
 
-1624546902 source:e:\blocks\homebudget\transactionsmanager.cpp
+1624548760 source:e:\blocks\homebudget\transactionsmanager.cpp
 	"transactionsManager.h"
 

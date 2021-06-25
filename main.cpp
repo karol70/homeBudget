@@ -8,7 +8,8 @@ int main()
       HomeBudget homeBudget;
     //homeBudget.userRegister();
     homeBudget.userLogIn();
-    homeBudget.showAllIncomes();
+    homeBudget.changePassword();
+  //  homeBudget.showAllIncomes();
   // homeBudget.addIncome();
    //   homeBudget.addIncome();
     // homeBudget.addIncome();
