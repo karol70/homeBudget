@@ -26,7 +26,11 @@ class TransactionManager
     int loadLastExpenseId();
     bool isDateCorrect(string enteredDate);
     int getNumberOfDaysOfMonth(int year, int month);
-    void showIncomes(Transactions transaction);
+    void showTransactions(Transactions transaction);
+    void showBalance(int firstDate, int secondDate);
+    bool sortByDate(  Transactions lhs,  Transactions  rhs);
+    void showAllTransactions(vector<Transactions> transaction);
+
 
     Transactions giveDataOfNewTransaction(int lastTransactionId);
 
@@ -40,8 +44,10 @@ public:
 
     void addIncome();
     void addExpense();
-    void showAllIncomes();
 
+    void showBalanceOfCurrentMonth();
+    void showBalanceOfPreviousMonth();
+    void showBalanceOfChoosenPeriod();
 };
 
 #endif
