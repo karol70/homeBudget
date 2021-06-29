@@ -8,7 +8,10 @@ int main()
       HomeBudget homeBudget;
     //homeBudget.userRegister();
     homeBudget.userLogIn();
-    homeBudget.changePassword();
+  //  homeBudget.showBalanceOfCurrentMonth();
+    homeBudget.showBalanceOfPreviousMonth();
+   // homeBudget.showBalanceOfChoosenPeriod();
+  //  homeBudget.changePassword();
   //  homeBudget.showAllIncomes();
   // homeBudget.addIncome();
    //   homeBudget.addIncome();

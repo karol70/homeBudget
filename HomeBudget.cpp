@@ -33,11 +33,20 @@ void HomeBudget::addExpense()
     transactionManager -> addExpense();
 }
 
-void HomeBudget::showAllIncomes()
-{
-  transactionManager -> showAllIncomes();
-}
 void HomeBudget::changePassword()
 {
  userManager.changePassword();
+}
+
+void HomeBudget::showBalanceOfCurrentMonth()
+{
+    transactionManager -> showBalanceOfCurrentMonth();
+}
+void HomeBudget::showBalanceOfPreviousMonth()
+{
+    transactionManager -> showBalanceOfPreviousMonth();
+}
+void HomeBudget::showBalanceOfChoosenPeriod()
+{
+    transactionManager -> showBalanceOfChoosenPeriod();
 }

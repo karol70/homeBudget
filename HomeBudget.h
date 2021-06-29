@@ -23,8 +23,10 @@ public:
     void showAllusers();
     void addIncome();
     void addExpense();
-    void showAllIncomes();
     void changePassword();
+    void showBalanceOfCurrentMonth();
+    void showBalanceOfPreviousMonth();
+    void showBalanceOfChoosenPeriod();
 
 };
 
