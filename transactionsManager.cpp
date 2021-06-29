@@ -133,11 +133,24 @@ void TransactionManager::showTransactions(Transactions transaction)
     cout << "Amount:                      " << transaction.getAmount ()<< endl;
 
 }
-/*    bool TransactionManager::sortByDate(  Transactions  lhs,  Transactions  rhs)
+/*    bool TransactionManager::sortByDate(  const Transactions  &t1,  const Transactions  &t2)
 {
     return lhs.getDate() < rhs.getDate();
 }
 */
+bool TransactionManager::isVectorSorted (vector<Transactions> transactions)
+{
+    for (int i=0;i<=transactions.size()-1;i++)
+    {
+        if (transactions[i].getDate() > transactions[i+1].getDate())
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+
     void TransactionManager::showBalance(int dateFrom, int dateTo)
     {
         vector <Transactions> balanceIncomes;
@@ -164,9 +177,13 @@ void TransactionManager::showTransactions(Transactions transaction)
                 expensesAmount += expenses[i].getAmount();
             }
         }
+      //  vector <Transactions> sortedIncomes;
+      //  vector <Transactions> sortedExpenses;
+      //  int incomesSize = balanceIncomes.size();
+     //   int expenseSize = balanceExpenses.size();
+     //   sortedIncomes = sortTransactions(balanceIncomes,0,incomesSize-1);
+      //  sortedExpenses = sortTransactions(balanceExpenses,0,expenseSize-1);
 
-    //    sort(balanceIncomes.begin(),balanceIncomes.end(),sortByDate);
-    //    sort(balanceExpenses.begin(),balanceExpenses.end(),sortByDate);
         system("cls");
         cout << "<<<<< INCOMES FROM " << dateFromStr << " TO " <<dateToStr <<" >>>>>" <<endl;
         showAllTransactions(balanceIncomes);
@@ -238,8 +255,7 @@ void TransactionManager::showTransactions(Transactions transaction)
           year = atoi(yearStr.c_str());
 
         }
-      //  cout << month<< endl;
-      //  system("pause");
+
         int days = auxiliaryMethods.getNumberOfDaysOfMonth(year,previousMonth);
         string daysStr = to_string(days);
 
