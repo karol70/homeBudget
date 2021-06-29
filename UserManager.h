@@ -23,9 +23,10 @@ class UserManager
 
 
 public:
-    UserManager(){
-    loggedUserId = 0;
-    users = fileWithUsers.loadUsersFromFile();
+    UserManager()
+    {
+        loggedUserId = 0;
+        users = fileWithUsers.loadUsersFromFile();
     };
 
     void userRegistration();
@@ -35,8 +36,6 @@ public:
     int getLoggedUserId();
     bool isUserLoggedIn();
     void changePassword();
-
-
 
 };
 

@@ -18,7 +18,7 @@ public:
         transactionManager = NULL;
     }
     void userRegister();
-    void userLogIn();
+    int userLogIn();
     void userLogOut();
     void showAllusers();
     void addIncome();

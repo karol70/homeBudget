@@ -19,10 +19,10 @@ class FileWithUsers
     bool isFileEmpty();
 
 public:
-    FileWithUsers(){};
-   void addUsersToFile(User user);
-   vector<User> loadUsersFromFile();
-   void saveAllUsersToFile(vector <User> users);
+    FileWithUsers() {};
+    void addUsersToFile(User user);
+    vector<User> loadUsersFromFile();
+    void saveAllUsersToFile(vector <User> users);
 
 };
 
