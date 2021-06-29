@@ -5,30 +5,31 @@
 1623672730 e:\blocks\homebudget\user.h
 	<iostream>
 
-1624956281 source:e:\blocks\homebudget\homebudget.cpp
+1624976972 source:e:\blocks\homebudget\homebudget.cpp
 	"HomeBudget.h"
 
-1624956281 e:\blocks\homebudget\homebudget.h
+1624974136 e:\blocks\homebudget\homebudget.h
 	"UserManager.h"
 	"transactionsManager.h"
 	"transactions.h"
 	<iostream>
 
-1624610018 e:\blocks\homebudget\usermanager.h
+1624977505 e:\blocks\homebudget\usermanager.h
 	<vector>
 	<iostream>
 	"User.h"
 	"AuxiliaryMethods.h"
 	"FileWithUsers.h"
 
-1624958371 source:e:\blocks\homebudget\main.cpp
+1624978258 source:e:\blocks\homebudget\main.cpp
 	<iostream>
 	"HomeBudget.h"
+	"AuxiliaryMethods.h"
 
-1624610018 source:e:\blocks\homebudget\usermanager.cpp
+1624977757 source:e:\blocks\homebudget\usermanager.cpp
 	"UserManager.h"
 
-1624548760 source:e:\blocks\homebudget\auxiliarymethods.cpp
+1624978099 source:e:\blocks\homebudget\auxiliarymethods.cpp
 	"AuxiliaryMethods.h"
 
 1624548760 e:\blocks\homebudget\auxiliarymethods.h
@@ -52,10 +53,10 @@
 	<string>
 	<afx.h>
 
-1624610018 source:e:\blocks\homebudget\filewithusers.cpp
+1624977505 source:e:\blocks\homebudget\filewithusers.cpp
 	"FileWithUsers.h"
 
-1624610018 e:\blocks\homebudget\filewithusers.h
+1624976972 e:\blocks\homebudget\filewithusers.h
 	<iostream>
 	<vector>
 	"Markup.h"
@@ -83,7 +84,7 @@
 	"AuxiliaryMethods.h"
 	<string>
 
-1624882942 source:e:\blocks\homebudget\transactions.cpp
+1624976972 source:e:\blocks\homebudget\transactions.cpp
 	"Transactions.h"
 
 1624273763 e:\blocks\homebudget\incomes.h
@@ -119,7 +120,7 @@
 1624352215 source:e:\blocks\homebudget\filewithincomes.cpp
 	"fileWithIncomes.h"
 
-1624548760 e:\blocks\homebudget\filewithtransactions.h
+1624976972 e:\blocks\homebudget\filewithtransactions.h
 	<iostream>
 	<vector>
 	<cstdlib>
@@ -131,7 +132,7 @@
 	"UserManager.h"
 	"AuxiliaryMethods.h"
 
-1624972717 e:\blocks\homebudget\transactionsmanager.h
+1624976972 e:\blocks\homebudget\transactionsmanager.h
 	"UserManager.h"
 	<iostream>
 	"AuxiliaryMethods.h"
@@ -139,9 +140,9 @@
 	"fileWithTransactions.h"
 	"transactions.h"
 
-1624548760 source:e:\blocks\homebudget\filewithtransactions.cpp
+1624976972 source:e:\blocks\homebudget\filewithtransactions.cpp
 	"fileWithTransactions.h"
 
-1624960887 source:e:\blocks\homebudget\transactionsmanager.cpp
+1624976972 source:e:\blocks\homebudget\transactionsmanager.cpp
 	"transactionsManager.h"
 

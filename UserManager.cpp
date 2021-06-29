@@ -12,7 +12,7 @@ void UserManager::userRegistration()
     fileWithUsers.addUsersToFile(user);
 
     cout << endl << "Account created succesfully" << endl << endl;
-    system("pause");
+    Sleep(2000);
 }
 
 User UserManager::enterDataOfNewUser()
@@ -59,27 +59,28 @@ int UserManager::loadIdOfNewUser()
 
 bool UserManager::isLoginExist(string login)
 {
-        for (int i = 0; i<users.size();i++)
+    for (int i = 0; i<users.size(); i++)
+    {
+        if (users[i].getLogin() == login)
         {
-            if (users[i].getLogin() == login)
-            {
-             cout << endl << "Login already exists." << endl;
+            cout << endl << "Login already exists." << endl;
             return true;
-            }
-
         }
-        return false;
+
+    }
+    return false;
 }
 
 int UserManager::userLogIn()
 {
+    system("cls");
     User user;
     string login = "", password = "";
 
     cout << "Enter login: ";
     login = auxiliaryMethods.getLine();
 
-  for (int i = 0; i<users.size();i++)
+    for (int i = 0; i<users.size(); i++)
 
     {
         if (users[i].getLogin() == login)
@@ -92,7 +93,6 @@ int UserManager::userLogIn()
                 if (users[i].getPassword() == password)
                 {
                     cout << endl << "Logged in." <<endl << endl;
-                    system("pause");
 
                     loggedUserId = users[i].getId();
                     return loggedUserId;
@@ -111,25 +111,25 @@ int UserManager::userLogIn()
 }
 
 int UserManager::userLogOut()
-   {
+{
     loggedUserId = 0;
     cout << "Logged Out";
-   }
+}
 
-   void UserManager::showAllUsers()
+void UserManager::showAllUsers()
 {
 
-    for (int i = 0; i<users.size();i++)
+    for (int i = 0; i<users.size(); i++)
 
-        {
-            cout << users[i].getId()<< endl;
-            cout << users[i].getName()<< endl;
-            cout << users[i].getSurname()<< endl;
-            cout << users[i].getLogin()<< endl;
-            cout << users[i].getPassword()<< endl;
+    {
+        cout << users[i].getId()<< endl;
+        cout << users[i].getName()<< endl;
+        cout << users[i].getSurname()<< endl;
+        cout << users[i].getLogin()<< endl;
+        cout << users[i].getPassword()<< endl;
 
 
-        }
+    }
 }
 
 int UserManager::getLoggedUserId()
@@ -147,12 +147,12 @@ bool UserManager::isUserLoggedIn()
 
 void UserManager::changePassword()
 {
-      string newPassword = "";
+    string newPassword = "";
     cout << "Enter new Password: ";
     newPassword = auxiliaryMethods.getLine();
 
 
-    for (int i = 0; i<users.size();i++)
+    for (int i = 0; i<users.size(); i++)
 
     {
         if (users[i].getId() == loggedUserId)

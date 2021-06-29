@@ -62,11 +62,11 @@ string AuxiliaryMethods::loadCurrentDay()
     return currentDayStr;
 }
 
- bool AuxiliaryMethods::isDateCorrect(string Date)
-    {
+bool AuxiliaryMethods::isDateCorrect(string Date)
+{
 
-        if(Date.length()==10)
-        {
+    if(Date.length()==10)
+    {
 
         int mininumDate = 20000101;
 
@@ -75,12 +75,12 @@ string AuxiliaryMethods::loadCurrentDay()
         int intConvertedYear = atoi(year.c_str());
         Date.erase(0,4+1);
 
-         string month = Date.substr(0,Date.find("-"));
-         int intConvertedMonth = atoi(month.c_str());
+        string month = Date.substr(0,Date.find("-"));
+        int intConvertedMonth = atoi(month.c_str());
         Date.erase(0,2+1);
 
-         string day = Date.substr(0,Date.find("-"));
-         int intConvertedDay = atoi(day.c_str());
+        string day = Date.substr(0,Date.find("-"));
+        int intConvertedDay = atoi(day.c_str());
         Date.erase(0,2+1);
 
         string convertedDate = year+month+day;
@@ -99,22 +99,22 @@ string AuxiliaryMethods::loadCurrentDay()
         int numberOfDaysOdChoosenDate = getNumberOfDaysOfMonth(intConvertedYear, intConvertedMonth);
 
         if(intConvertedYear == intCurrentYear)
-           {
-             if( intConvertedMonth <= intCurrentMonth && intConvertedDay <= numberOfDaysOfCurrentMonth)
+        {
+            if( intConvertedMonth <= intCurrentMonth && intConvertedDay <= numberOfDaysOdChoosenDate)
                 return true;
-           }
-          if(intConvertedDate >= mininumDate && intConvertedYear < intCurrentYear)
+        }
+        if(intConvertedDate >= mininumDate && intConvertedYear < intCurrentYear)
         {
             if (intConvertedMonth <= 12 && intConvertedDay <= numberOfDaysOdChoosenDate)
-            return true;
+                return true;
         }
-
-        }
-        cout << "Entered date is incorrect, try again"<<endl;
-            return false;
-
 
     }
+    cout << "Entered date is incorrect, try again"<<endl;
+    return false;
+
+
+}
 
 int AuxiliaryMethods::getNumberOfDaysOfMonth(int year, int month)
 {
@@ -129,13 +129,13 @@ int AuxiliaryMethods::getNumberOfDaysOfMonth(int year, int month)
         bool leapyear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
 
         if (leapyear == 0)
-                days = 28;
+            days = 28;
         else
-                days = 29;
+            days = 29;
     }
 
     else
-    days = 31;
+        days = 31;
 
     return days;
 }
@@ -152,21 +152,21 @@ string AuxiliaryMethods::convertDateToString (int date)
 }
 int AuxiliaryMethods::convertDateToInt(string Date)
 {
-        string year = Date.substr(0,Date.find("-"));
-        int intConvertedYear = atoi(year.c_str());
-        Date.erase(0,4+1);
+    string year = Date.substr(0,Date.find("-"));
+    int intConvertedYear = atoi(year.c_str());
+    Date.erase(0,4+1);
 
-         string month = Date.substr(0,Date.find("-"));
-         int intConvertedMonth = atoi(month.c_str());
-        Date.erase(0,2+1);
+    string month = Date.substr(0,Date.find("-"));
+    int intConvertedMonth = atoi(month.c_str());
+    Date.erase(0,2+1);
 
-         string day = Date.substr(0,Date.find("-"));
-         int intConvertedDay = atoi(day.c_str());
-        Date.erase(0,2+1);
+    string day = Date.substr(0,Date.find("-"));
+    int intConvertedDay = atoi(day.c_str());
+    Date.erase(0,2+1);
 
-        string convertedDate = year+month+day;
-        int intConvertedDate = atoi(convertedDate.c_str());
+    string convertedDate = year+month+day;
+    int intConvertedDate = atoi(convertedDate.c_str());
 
-        return intConvertedDate;
+    return intConvertedDate;
 
 }

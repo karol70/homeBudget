@@ -23,7 +23,7 @@ class FileWithTransactions
 
 
 public:
-    FileWithTransactions(){}
+    FileWithTransactions() {}
     void addTransactionToFile(Transactions transaction,string transactionFileName,string IncomeOrExpense);
     vector<Transactions> loadTransactionsFromFile(int LOGGED_USER_ID,string transactionFileName,string IncomeOrExpense);
 };

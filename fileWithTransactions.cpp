@@ -19,6 +19,7 @@ bool FileWithTransactions::isFileEmpty(string fileName)
 
 void FileWithTransactions::addTransactionToFile(Transactions transaction,string transactionFileName,string IncomeOrExpense)
 {
+    AuxiliaryMethods auxiliaryMethods;
     if(isFileEmpty(transactionFileName)==true)
     {
         CMarkup xml;
@@ -34,7 +35,9 @@ void FileWithTransactions::addTransactionToFile(Transactions transaction,string 
     xml.IntoElem();
     xml.AddElem( "USER_ID",transaction.getLoggedUserId());
     xml.AddElem( IncomeOrExpense+"_ID",transaction.getTransactionId());
-    xml.AddElem( "DATE",transaction.getDate());
+    int date = transaction.getDate();
+    string dateStr = auxiliaryMethods.convertDateToString(date);
+    xml.AddElem( "DATE",dateStr);
     xml.AddElem( "ITEM",transaction.getItem());
     string amount = to_string(transaction.getAmount());
     amount = amount.erase(amount.find(".")+3);
@@ -86,7 +89,7 @@ vector<Transactions> FileWithTransactions::loadTransactionsFromFile(int LOGGED_U
             transactions.push_back(transaction);
         }
         else
-        xml.OutOfElem();
+            xml.OutOfElem();
     }
 
     return transactions;
